@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0px;
+  padding: 0px; 
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(font/OpenSans-Bold.ttf); 
+}
+.clear {
+  clear: both; 
+}
+
+#wrapper {
+  box-sizing: border-box;
+  border: solid 1px;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0b8b01; 
+}
+
+.container {
+  height: auto;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+#header {
+  height: auto; 
+}
+#logo {
+  width: 20%;
+  float: left;
+  height: auto; 
+}
+#logo a {
+  width: 100%;
+  color: #fff;
+  text-decoration: none; 
+}
+#logo a img {
+  height: 155px;
+  padding: 0;
+  margin: 5%;
+  margin-top: 12px;
+  vertical-align: middle; /*thành phần canh giữa các thành phần bên ngoài*/
+}
+#text {
+  width: 80%;
+  float: left;
+  height: auto;
+  padding-left: 8%;
+}
+#table {
+  height: auto;
+  width: 100%;
+}
+.name {
+  font-family: OpenSans-Bold,arial;
+  color: #fff !important;
+  padding: 15px 0px 0px 0px;
+  font-size: 19px !important;
+  width: 100%;
+  font-weight: bold !important;
+}
+#table div{
+  font-size: 13px;
+  line-height: 25px; 
+  margin-top: 20px;
+}
+.address {
+  width: 330px;
+  background-image: url("../images/icon-company.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-left: 58px;
+  color: rgba(255, 255, 255, 0.9);
+  float: left; 
+}
+.mail {
+  width: 230px;
+  background-image: url("../images/icon-contact-top.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-left: 58px; 
+  float: left;
+}
+.language {
+  width: 230px;
+  background-image: url("../images/icon-language.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-left: 58px;
+  float: left;
+}
+#text a {
+  text-decoration: none;
+  height: 125px;
+  width: 100%;
+  color: #fff; 
+}
+#text a:hover {
+  text-decoration: underline;
+  color: black; 
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 85%; 
+  } 
+}
+@media only screen and (min-width: 721px) and (max-width: 1023px) {
+  #wrapper {
+    width: 100%; 
+  }
+  .container {
+    width: 90%;
+    /*width: 970px;*/
+  }
+  #logo{
+    width: 20%;
+    margin-right: 10%;
+
+  }
+  #text{
+    width: 70%;
+  }
+}
+/*css cho phone*/
+@media only screen and (max-width: 720px) {
+  #wrapper {
+    width: 100%; 
+  }
+  .container{
+    width: 100%;
+  }
+  #logo{
+    float: none;
+    margin-left: 25px;
+  }
+  #text{
+    /*margin-top: 10px;*/
+    float: none;
+  }
+  .mail{
+    /*margin-left: 25px;*/
+  }
+  .languge{
+    /*margin-left: 25px;*/
+  }
+  .container {
+    width: 100%;
+  } 
+}
+
